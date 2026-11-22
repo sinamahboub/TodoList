@@ -5,7 +5,7 @@ def check_file_exist(file):
     if not os.path.exists(file) :
         with open(file, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow([f"the {file} not exist ❌, bot i creat this file ✔️"])
+            writer.writerow([f"the {file} did not exist, but I created this file ✔️"])
             return True
     return True
     
